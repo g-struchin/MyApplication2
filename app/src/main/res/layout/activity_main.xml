@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.a1.myapplication2.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/linustorvalds" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="110dp"
+                android:text="Ли́нус Бенедикт То́рвальдс"
+                android:textSize="20dp"
+                android:textStyle="bold|normal" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ли́нус Бенедикт То́рвальдс, или Ту́рвальдс (швед. Linus Benedict Torvalds [ˈliːn.ɵs ˈtuːr.valds] (инф.); 28 декабря 1969, Хельсинки, Финляндия) — финно-американский программист, хакер.
+Воодушевлённый прочтением книги Эндрю Таненбаума, посвящённой операционной системе Minix, Линус создал Linux — ядро операционной системы GNU/Linux, являющейся на данный момент самой распространённой из свободных операционных систем.С 1997 по 2003 год Линус работал в фирме Трансмета. После этого организовал Open Source Development Labs. В данный момент работает в Linux Foundation (с 2007), где занимается разработкой ядра Linux. Родители Линуса, финские шведы Нильс и Анна Торвальдс, были в 1960-х годах студентами-радикалами, впоследствии стали журналистами. Линус был назван в честь американского химика Лайнуса Полинга. В школе преуспевал в физике и математике. Был малообщительным, скромным мальчиком. Его часто дразнили из-за политических взглядов его отца. В 1988 году Линус поступил в Хельсинкский университет, который окончил в 1996 году, получив степень магистра кибернетики. Линус Торвальдс живёт в городе Портленд (США, штат Орегон) с женой Туве[nl] (фин. Tove Torvalds, урождённая Tove Monni), шестикратной чемпионкой Финляндии по каратэ и бывшей студенткой Линуса, тремя дочерьми: Патрицией Мирандой (род. 5 декабря 1996), Даниэлой Йоландой (род. 16 апреля 1998) и Селестой Амандой (род. 20 ноября 2000). С февраля 1997 года по июнь 2003 года работал в компании «Transmeta Corporation», после чего перешёл в компанию «Open Source Development Labs» (теперь — «The Linux Foundation»). Хотя Linux Foundation находится в Бивертоне (англ. Beaverton), Торвальдс работает дома. Личный талисман Линуса Торвальдса — пингвин Tux, ставший также эмблемой «Linux». В своей книге «Just for Fun» Торвальдс пишет, что пингвина как эмблему он выбрал из-за того, что однажды в зоопарке его клюнул пингвин.[3] Один из «Законов Линуса», окончательно сформулированный американским хакером Эриком Реймондом, гласит: «При достаточном количестве глаз все ошибки лежат на поверхности». Глубокой ошибкой называется та, которую трудно найти. Однако, если достаточно много людей ищет ошибки, то все они выходят на поверхность. Оба программиста разделяют идеологию открытого исходного кода, отчасти основанную на вере в этот закон. Однако их взгляды расходятся в том, что важнее: открытость кода или «свободность» программ, их распространения (сторонником последнего является Реймонд)." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:onClick="onClick"
+                    android:text="BlueTheme"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorGreen"
+                    android:onClick="onClick2"
+                    android:text="GreenTheme"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBrown"
+                    android:onClick="onClick3"
+                    android:text="BrownTheme"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold|italic"
+
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
